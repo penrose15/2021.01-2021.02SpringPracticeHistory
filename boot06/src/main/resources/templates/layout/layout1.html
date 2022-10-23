@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" th:href="@{/css/normalize.css}">
+  <link rel="stylesheet" th:href="@{/css/main.css}">
+  <script th:src="@{/js/vendor/modernizr-3.11.2.min.js}"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- content body -->
+
+    <div class="page-header">
+  <h1>
+  <a href="http://localhost:8080/boards/list">Boot06 Project <small>for Spring MVC+JPA </small></a>
+  </h1>
+  
+  </div>
+  <div class="panel panel-default" layout:fragment="content">
+
+  </div>
+  
+
+  <script>window.jQuery || document.write('<script th:src="@{/js/vendor/jquery-1.12.0.min.js}"><\/script>')</script>
+
+  <!-- Add your site or application content here -->
+
+  <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+  
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!-- custom javascript -->
+  <th:block layout:fragment="script"></th:block>
+  
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q||[]).push(arguments)});b[l].l=+new Date;
+   e=o.createElement(i);
+   r=o.getElementsByTagName(i)[0].textContent;
+   e.src='https://www.google-analytics.com/analytics.js';
+   r.parentNode.insertBefore(e.r)}(window,document,'script','ga'));
+    ga('create', 'UA-XXXXX-Y', 'auto');ga('send', 'pageview');
+  </script>
+ <!-- <script async src='https://www.google-analytics.com/analytics.js'></script> -->
+</body>
+
+</html>
